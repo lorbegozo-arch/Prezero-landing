@@ -66,7 +66,7 @@
       <!-- VIDEO — protagonista -->
       <div id="video" style="margin-top:54px;">
         <div id="pzVideo" role="button" tabindex="0" style="position:relative; width:100%; aspect-ratio:16/9; border-radius:26px; overflow:hidden; background:#1b1a2e; box-shadow:0 40px 90px rgba(43,41,69,.32), 0 0 0 1px rgba(63,60,99,.06); cursor:pointer;">
-          <img id="pzPoster" src="https://img.youtube.com/vi/EbULxHC2ucs/maxresdefault.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+          <img id="pzPoster" src="https://img.youtube.com/vi/6W-w3XsZJ4E/maxresdefault.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
           <div style="position:absolute; inset:0; z-index:2; background:linear-gradient(180deg, rgba(20,19,34,.10) 0%, rgba(20,19,34,.55) 100%);"></div>
           <div style="position:absolute; inset:0; margin:auto; width:92px; height:92px; border-radius:50%; background:rgba(255,255,255,.95); display:flex; align-items:center; justify-content:center; z-index:3; box-shadow:0 16px 40px rgba(0,0,0,.3);">
             <svg width="34" height="34" viewBox="0 0 24 24" fill="#3F3C63" style="margin-left:5px;"><path d="M8 5v14l11-7z"></path></svg>
@@ -75,7 +75,7 @@
             <div style="font:700 clamp(18px,2vw,26px)/1.1 'Philosopher';">El caso PreZero × Fisify, en vídeo</div>
             <div style="font:400 14px/1.4 'Outfit'; color:rgba(255,255,255,.8); margin-top:4px;">El equipo de PreZero y su fisioterapeuta, en primera persona</div>
           </div>
-          <a id="pzYtLink" href="https://www.youtube.com/watch?v=EbULxHC2ucs" target="_blank" rel="noopener" style="position:absolute; top:20px; right:20px; z-index:4; display:inline-flex; align-items:center; gap:7px; font:600 13px/1 'Outfit'; color:#3F3C63; background:rgba(255,255,255,.92); padding:9px 14px; border-radius:999px; box-shadow:0 6px 18px rgba(0,0,0,.2);">
+          <a id="pzYtLink" href="https://www.youtube.com/watch?v=6W-w3XsZJ4E" target="_blank" rel="noopener" style="position:absolute; top:20px; right:20px; z-index:4; display:inline-flex; align-items:center; gap:7px; font:600 13px/1 'Outfit'; color:#3F3C63; background:rgba(255,255,255,.92); padding:9px 14px; border-radius:999px; box-shadow:0 6px 18px rgba(0,0,0,.2);">
             Ver en YouTube
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3F3C63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path></svg>
           </a>
@@ -506,7 +506,7 @@ class Component extends DCLogic {
     // Video facade — click to load YouTube
     const v = root.getElementById('pzVideo');
     if (v) {
-      const id = this.props.videoId || 'EbULxHC2ucs';
+      const id = this.props.videoId || '6W-w3XsZJ4E';
       const poster = root.getElementById('pzPoster');
       if (poster) {
         poster.onerror = () => { poster.onerror = null; poster.src = 'https://img.youtube.com/vi/' + id + '/hqdefault.jpg'; };
